@@ -1,0 +1,102 @@
+.cartoon{
+    .mt{
+        margin-top: 5rem;
+    }
+    margin: 1.5rem 0;
+    padding: .6rem 9rem;
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-hot{
+        display: grid;
+        gap:.2rem .3rem;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+    &-content:nth-child(2){
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    &-content{
+                position: relative;
+            .img{
+                position:  absolute;
+            }
+        }
+   .chapter{
+        position: absolute;
+        font-size: 1.7rem;
+        top:.7rem;
+        left: 1.2rem; 
+        padding: .5rem;
+        background-color: $color-1;
+        border-radius: 3rem;
+    }
+    &-name{
+        position: absolute;
+        color:#fff;
+        font-size: 1.7rem;
+        bottom: 1.2rem;
+        left: 1.2rem;
+        font-weight: bold;
+        background-color: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.75));
+    }
+    &-vote{
+        h2{
+            font-size: 2.7rem;
+            border-left: 7px solid #56ccf2;
+            color:#56ccf2;
+            margin: .3rem 0;
+            margin: 1rem 0;
+        }
+    }
+    .gird{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap:0 1rem;
+        .comics{
+            text-align: center;
+            &-img{
+                overflow: hidden;
+                max-height: 23.8rem;
+                img{
+                    border-radius: 1rem;
+                }
+            }
+            &-content{
+                align-items: center;
+                padding: 1rem 0;
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                .chap{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .main-bot{
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+        .btn{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color:whitesmoke;
+            background-color: $color-1;
+            padding: 1rem 5rem;
+            border-radius: 1rem;
+        }
+    }
+    .main-end{
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: .1rem solid whitesmoke;
+        border-radius: .6rem;
+        box-shadow: 10px 10px 17px -10px rgba(0,0,0,0.75);
+    }
+}

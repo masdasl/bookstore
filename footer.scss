@@ -1,0 +1,14 @@
+.footer{
+    &-top{
+        min-height: 4rem;
+        background-color: #343a40;
+    }
+    &-container{
+        padding: .6rem 9rem;
+        background-color: #6c757d;
+    }
+    .text{
+        font-size: 1.7rem;
+        color:whitesmoke;
+    }
+}
